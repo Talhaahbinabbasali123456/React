@@ -10,43 +10,45 @@ import Experinceandskills from './experinceskills';
 import Projects from './project';
 import Footer from './footer';
 import humburger from './skillimg/hmbrgr.png';
-// import Sidenav from './sidenav';
-
+import Contact from './contact';
+import sideNaveOpen from './sidenav';
+import sideNaveClose from'./sidenavclose';
 
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <section class='header-layout' id='home'>
-        <div class='side-navbar'>
-            <div class='nav-items flex-coloum'> 
+    <section className='header-layout' id='home'>
+        <div className='side-navbar'>
+            <div className='flex-coloum'> 
+                <h1  className='closebtn' onClick={sideNaveClose}>Close</h1>
                 <NavEle  link='#home' linkText='Home'/>
-                <NavEle  link='#about'  linkText='About'/>
-                <NavEle  link='#experience'  linkText='Experience/ Skills'/>
+                <NavEle  link='#about' linkText='About'/>
+                <NavEle  link='#experience' linkText='Experience/ Skills'/>
                 <NavEle  link='#project' linkText='Projects'/>
+                <NavEle  link='#contact' linkText='Contact'/>
             </div> 
         </div>
-        <section class="nav-layout">
-            <div class="nav-logo">
-                <img class='logo-height' src={logo} alt='img'></img> 
+        <section className="nav-layout">
+            <div className="nav-logo">
+                <img className='logo-height' src={logo} alt='img'></img> 
             </div>
-            <div class='nav-items'> 
+            <div className='nav-items'> 
                 <NavEle  link='#home' linkText='Home'/>
                 <NavEle  link='#about'  linkText='About'/>
                 <NavEle  link='#experience'  linkText='Experience/ Skills'/>
                 <NavEle  link='#project' linkText='Projects'/>
+                <NavEle  link='#contact' linkText='Contact'/>
             </div> 
-            <div class='hmbrgr-cont'>
-                <img class='hmbrgr-height' onClick='hmbrgr()' src={humburger} alt='img'></img>
-
-                 {/* <Sidenav/> */}
+            <div className='hmbrgr-cont'>
+                <img className='hmbrgr-height' onClick={sideNaveOpen} src={humburger} alt='img'></img>
            </div>
         </section>
-        <section class='header-slider'>
-                <HeaderEle title='blah blah'/>
-                <section class='about-section' id='about'>
+        <section className='header-slider'>
+                <HeaderEle/>
+                <section className='about-section' id='about'>
                     <AboutSec/>
                 </section>
-                <section class='exs-section rtl' id='experience'>
+                <section className='exs-section rtl' id='experience'>
                     <Experinceandskills/>
                 </section>
         </section>
@@ -54,7 +56,10 @@ ReactDOM.render(
         <section id='project'>
                 <Projects />
         </section>
-        <section class='bg-black'>
+        <section id='contact' className='contact-container rtl'>
+                <Contact />
+        </section>
+        <section className='bg-black'>
                 <Footer/>
         </section>
     </section>, 

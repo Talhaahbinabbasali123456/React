@@ -1,4 +1,9 @@
 .footer-logo-height {
-    height: 70px;
-    padding: 0px 10px;
-  }
+  height: 70px;
+  padding: 0px 10px;
+}
+.font-20 {
+  margin: 0px;
+  font-size: 16px;
+  color: gray;
+}

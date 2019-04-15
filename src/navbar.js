@@ -1,45 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import sideNaveClose from'./sidenavclose';
+
 
 class NavEle extends Component {
   render() {
     return (
-      <a class='nav-tab' href={this.props.link} title={this.props.title}>{this.props.linkText}</a>
+      <a className='nav-tab' onClick={sideNaveClose} href={this.props.link} title={this.props.title}>{this.props.linkText}</a>
     )
   }
 }
 
 export default NavEle;
 
-
-
-
-
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//           </p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;

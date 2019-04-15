@@ -9,12 +9,12 @@ import Github from './skillimg/github2.png';
 class Links extends Component {
     render(){
         return (
-            <div class='absolute-links'>
-                <img class='social-icon-height' title='Facebook' src={Fbicon} alt='img'></img>
-                <img class='social-icon-height' title='Gmail' src={Gicon} alt='img'></img>
-                <img class='social-icon-height' title='Twitter' src={Ticon} alt='img'></img>
-                <img class='social-icon-height' title='WhatsApp' src={Whatsappicon} alt='img'></img>
-                <img class='social-icon-height' title='Github' src={Github} alt='img'></img>
+            <div className='absolute-links'>
+                <img className='social-icon-height' title='Facebook' src={Fbicon} alt='img'></img>
+                <img className='social-icon-height' title='Gmail' src={Gicon} alt='img'></img>
+                <img className='social-icon-height' title='Twitter' src={Ticon} alt='img'></img>
+                <img className='social-icon-height' title='WhatsApp' src={Whatsappicon} alt='img'></img>
+                <img className='social-icon-height' title='Github' src={Github} alt='img'></img>
             </div>
             // <a href={this.props.link} title={this.props.title}>{this.props.linkText}</a>
         );

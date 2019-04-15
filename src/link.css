@@ -20,6 +20,7 @@
     position: relative;
     right: 0;
     cursor: pointer;
+    background-color: #efeff0;
 }
 .social-icon-height:hover {
     right: 7px;

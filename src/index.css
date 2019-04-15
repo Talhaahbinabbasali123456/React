@@ -21,10 +21,7 @@ code {
 .text-center {
   text-align: center;
 }
-.font-20 {
-  font-size: 20px;
-  color: gray;
-}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -37,18 +34,15 @@ code {
 }
 .heading-title {
   padding-left: 20px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  border-left: 5px solid black;
-  /* background-image: linear-gradient(to right, #efeff0 , #dadbd29e); */
-  /* background-color: black;
-  color: white; */
+  border-left: 10px solid black;
 }
 .heading-title-rtl {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  border-right: 5px solid black;
+  border-right: 10px solid black;
 }
 .rtl {
   direction: rtl;

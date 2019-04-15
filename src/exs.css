@@ -5,6 +5,7 @@
     padding: 300px 55px 300px 30px;
     border-bottom: 2px solid #dcd8d8d1;
     border-bottom-left-radius: 100%;
+    text-align: center;
 }
 .exs-section > .about-para > div > p, .skill-name {
     font-size: 20px;

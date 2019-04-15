@@ -1,16 +1,8 @@
-// import React, { Component } from 'react';
-// import humburger from './skillimg/hmbrgr.png';
 
-// class Sidenav extends Component {
- 
-//     hmbrgr(){
-//         document.querySelector('.side-navbar').style.display = 'block';
-//     }
-//   render() {  
-//     return (<div>
-//       {this.hmbrgr()}
-//     </div>
-//     );
-//   }
-// }
-// export default Sidenav;
+function sideNaveOpen() {
+        document.querySelector('.side-navbar').style['z-index'] = 5;
+        document.querySelector('.side-navbar').style.opacity = 1;
+        document.querySelector('.side-navbar').style.width = '100%';
+}
+
+export default sideNaveOpen;
